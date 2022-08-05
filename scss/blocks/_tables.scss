@@ -1,0 +1,40 @@
+.table {
+  border: 2px solid black;
+  border-collapse: collapse;
+  margin: auto;
+  margin-top: 50px;
+  & th {
+    padding: 10px 20px;
+  }
+  & td {
+    padding: 10px 15px;
+    text-align: center;
+  }
+  & thead tr {
+    background-color: rgb(62, 106, 107);
+    color: rgb(250, 249, 249);
+  }
+  & tbody tr:nth-child(2n + 1) {
+    background-color: rgb(104, 163, 165);
+    color: rgb(250, 249, 249);
+  }
+  & tbody tr:nth-child(2n) {
+    background-color: rgb(62, 106, 107);
+    color: rgb(250, 249, 249);
+  }
+}
+.btn {
+  border: none;
+  background-color: rgb(43, 177, 43);
+  padding: 6px 8px;
+  border-radius: 6px;
+  color: antiquewhite;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: darkred;
+  color: antiquewhite;
+}
+.colored {
+  background-color: pink;
+}
