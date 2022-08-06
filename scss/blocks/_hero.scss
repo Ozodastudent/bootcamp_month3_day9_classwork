@@ -1,0 +1,165 @@
+.hero {
+  position: relative;
+  background-image: url(../../classwork_img/hero-bg-desk.png);
+  background-repeat: no-repeat;
+  background-size: 733px;
+  background-position-x: 620px;
+  padding-bottom: 370px;
+  &_box {
+    padding: 0 300px 0 0;
+    &_title {
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      font-size: 80px;
+      line-height: 90px;
+      letter-spacing: -2px;
+      color: #34313d;
+    }
+    &_desc {
+      margin-bottom: 38px;
+      padding-right: 240px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 36px;
+      letter-spacing: 0.15px;
+      color: #9e9aa8;
+    }
+  }
+  &_register {
+    position: absolute;
+    top: 670px;
+    left: 9%;
+    right: 9%;
+    padding: 52px 44px;
+    background-image: url(../../classwork_img/input_box.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    &_form {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    &_input {
+      padding: 14px 500px 14px 60px;
+      border: none;
+      border-radius: 10px;
+    }
+    &_link {
+      padding: 16px 35px;
+      border-radius: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .hero {
+    padding-top: 50px;
+    padding-bottom: 340px;
+    overflow: hidden;
+    background-image: url(../../classwork_img/hero-bg-desk.png);
+    background-repeat: no-repeat;
+    background-size: 503px;
+    background-position-x: calc(100% + 10px);
+
+    &_box {
+      padding: 0 350px 0 0;
+      &_title {
+        font-size: 46px;
+        line-height: 64px;
+      }
+      &_desc {
+        font-size: 18px;
+        margin-top: -30px;
+        margin-bottom: 38px;
+        padding-right: 50px;
+        line-height: 32px;
+      }
+    }
+    &_register {
+      position: absolute;
+      top: 560px;
+      left: 8%;
+      right: 8%;
+      z-index: 10;
+      padding: 52px 20px;
+      background-image: url(../../classwork_img/input_box.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      &_input {
+        padding: 11px 200px 11px 60px;
+      }
+      &_link {
+        padding: 13px 35px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .hero {
+    background-size: 400px;
+    background-position-x: calc(100% + 0px);
+
+    padding-top: 450px;
+    padding-right: 0px;
+    padding-bottom: 270px;
+    &_box {
+      padding: 0 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &_title {
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 48px;
+        letter-spacing: -2px;
+        color: #34313d;
+        text-align: center;
+      }
+      &_desc {
+        margin-top: -20px;
+        margin-bottom: 38px;
+        padding-right: 0px;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+      }
+      &_link {
+        padding: 14px 30px;
+      }
+    }
+
+    &_register {
+      position: absolute;
+      top: 85%;
+      left: 4%;
+      right: 4%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 30px 24px 40px;
+      background-image: url(../../classwork_img/input_box.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      &_form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      &_input {
+        padding: 16px 102px 16px 16px;
+        margin-bottom: 16px;
+      }
+      &_link {
+        padding: 14px 111px;
+        font-size: 18px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+      }
+    }
+  }
+}

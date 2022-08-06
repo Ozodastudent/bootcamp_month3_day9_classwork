@@ -1,0 +1,134 @@
+.footer {
+  display: flex;
+  align-items: center;
+  padding-bottom: 50px;
+  background-color: rgba(35, 33, 39, 1);
+  &_tools {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &_lists {
+      display: flex;
+    }
+  }
+  &_nav {
+    display: flex;
+    flex-direction: column;
+    padding-top: 110px;
+    &_link {
+      text-decoration: none;
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 22px;
+      letter-spacing: -0.234375px;
+      color: #bfbfbf;
+      &:hover {
+        color: rgba(43, 208, 208, 1);
+      }
+      & + & {
+        margin-top: 10px;
+      }
+    }
+    &_strong {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.25px;
+      color: #ffffff;
+    }
+    & + & {
+      margin-left: 70px;
+    }
+  }
+  &_icons {
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    &_link {
+      text-decoration: none;
+      & + & {
+        margin-left: 24px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .footer {
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+    background-color: rgba(35, 33, 39, 1);
+    &_tools {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &_lists {
+        display: flex;
+      }
+    }
+    &_nav {
+      display: flex;
+      flex-direction: column;
+      padding-top: 110px;
+      &_link {
+        text-decoration: none;
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: -0.234375px;
+        color: #bfbfbf;
+        &:hover {
+          color: rgba(43, 208, 208, 1);
+        }
+      }
+      & + & {
+        margin-left: 30px;
+      }
+    }
+    &_icons {
+      margin-left: 60;
+    }
+  }
+}
+@media only screen and (max-width: 650px) {
+  .footer {
+    padding-top: 54px;
+    &_tools {
+      flex-direction: column;
+      justify-content: center;
+      &_lists {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    &_nav {
+      padding-top: 40px;
+      text-align: center;
+      & + & {
+        margin-left: 0px;
+      }
+    }
+
+    &_icons {
+      margin-left: 0px;
+      margin-top: 46px;
+      display: flex;
+      align-items: center;
+      &_link {
+        text-decoration: none;
+        & + & {
+          margin-left: 24px;
+        }
+      }
+    }
+  }
+}

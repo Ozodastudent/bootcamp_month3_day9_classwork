@@ -1,3 +1,16 @@
+@font-face {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  src: url(../fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  src: url(../fonts/Poppins-Bold.ttf);
+}
+
 html {
   box-sizing: border-box;
 }
@@ -9,7 +22,6 @@ html {
 body {
   font-size: 16px;
   font-family: sans-serif;
-  background-color: antiquewhite;
 }
 .visually-hidden {
   clip: rect(0 0 0 0);
@@ -21,7 +33,13 @@ body {
   width: 1px;
 }
 .container {
-  max-width: 1280px;
-  padding: 0 30px;
+  width: 100%;
+  max-width: 1120px;
+  padding: 0 20px;
   margin: auto;
+}
+@media only screen and (max-width: 1024px) {
+  .container {
+    padding: 0 45px;
+  }
 }
